@@ -1,38 +1,60 @@
 .App {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
   text-align: center;
+  background: url("./assets/icons/octagon-fill.svg") space repeat;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.folder_paper_illusion {
+  border: black solid;
+  background-color: #FFE0D1;
+  box-shadow: 4px 4px #FFE0D1, 5px 5px #B39181, 9px 9px #FFE0D1, 10px 10px #B39181, 14px 14px #FFE0D1;
+  transition: box-shadow 1s;
+  padding: 1%;
+}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.folder_paper_illusion:hover {
+  transition: box-shadow 1s;
+  box-shadow: 0 0 #FFE0D1, 0 0 #B39181, 0 0 #FFE0D1, 0 0 #B39181, 0 0 #FFE0D1;
+}
+
+.bg-text {
+  color: black;
+  opacity: 0.5;
+  font-size: 100px;
+  font-weight: bolder;
+  z-index: -1;
+  margin: 20px;
+}
+.onHover:hover{
+  background: #B39181;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 100px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bg-text {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .bg-text {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .bg-text {
+    font-size: 14px;
+  }
+  .App {
+
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

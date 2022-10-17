@@ -1,0 +1,118 @@
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    color: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: black;
+}
+.main {
+    height: 800px;
+}
+.main__image {
+    width: 500px;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    background: none;
+}
+.main__text {
+    border: black solid;
+    padding: 20px;
+    border-radius: 5px;
+    word-break: break-word;
+    position: absolute;
+    width: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    top: 200px;
+    right: 25%;
+    background: #FFE0D1;
+}
+.main__button {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 100px;
+    right: 20%;
+    background: #80BA96;
+    border: #80BA96;
+}
+.main__button:hover {
+    background: #72A686;
+    border: #72A686;
+}
+
+@media screen and (min-width: 1201px) {
+    .main {
+        height: 800px;
+    }
+    .main__image {
+        bottom: 200px;
+    }
+    .main__button {
+        bottom: 300px;
+        right: 20%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main__text {
+        top: 100px;
+    }
+    .main {
+        height: 600px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main__text {
+        top: 120px;
+    }
+    .main {
+        height: 600px;
+    }
+    .main__image {
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        background: none;
+    }
+    .main__button {
+        bottom: 10px;
+        right: 20%;
+        top: 550px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .main__text {
+        top: 120px;
+        left: auto;
+        max-width: 320px;
+    }
+    .main {
+        height: 600px;
+    }
+    .main__image {
+        width: 320px;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        background: none;
+    }
+    .main__button {
+        bottom: 10px;
+        right: 20%;
+        top: 550px;
+    }
+}
